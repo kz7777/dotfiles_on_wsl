@@ -120,6 +120,7 @@ fi
 
 
 #mac ssh
-alias mac="ssh ku@10.148.72.153"
+#シェルファイルを読み込み
+#
 #Kドライブマウント
 alias kdrive="sudo mount -t drvfs K: /mnt/kdrive"
