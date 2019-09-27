@@ -36,7 +36,11 @@ set wildmode=list:longest
 nnoremap j gj
 nnoremap k gk
 " シンタックスハイライトの有効化
-syntax enable
+syntax on
+
+"カラースキーム
+colorscheme molokai
+set t_Co=256
 
 
 " Tab系
