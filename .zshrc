@@ -121,6 +121,8 @@ fi
 
 #mac ssh
 #シェルファイルを読み込み
-#
+alias mac="sh ~/codex/mac.sh"
 #Kドライブマウント
 alias kdrive="sudo mount -t drvfs K: /mnt/kdrive"
+#メモ作成
+alias memo="cd ~/memox && vim"
