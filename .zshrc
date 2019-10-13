@@ -130,5 +130,10 @@ alias memo="cd ~/memox && vim"
 alias sep="ranger && gn && ~"
 
 #ログイン時tmux起動
-[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+#[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
 
+#ホームディレクトリに移動
+cd
+
+#ログイン時tmux attached
+tmux attach
