@@ -407,15 +407,20 @@ nnoremap う u
 nnoremap お o
 nnoremap っd dd
 nnoremap っy yy
-nnoremap っｄdd
-nnoremap っｙyy
+"nnoremap っｄdd
+"nnoremap っｙyy
 nnoremap ｘ x
 nnoremap ： :
 
 " jjでエスケープ
 inoremap <silent> jj <ESC>
-
-
-" 日本語入力で”っj”と入力してもEnterキーで確定させればインサートモードを抜ける
-inoremap <silent> っj <ESC>
-inoremap <silent> っｊ <ESC>
+"
+"
+"" 日本語入力で”っj”と入力してもEnterキーで確定させればインサートモードを抜ける
+"inoremap <silent> っj <ESC>
+"inoremap <silent> っｊ <ESC>
+""コレでスペース+エンターキーを押すだけでo+Esc を行ってくれて便利です。
+""
+""https://qiita.com/umi/items/5a1d05256562c9217fec
+"noremap <Space><CR> o<ESC>
+"
