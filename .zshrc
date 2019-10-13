@@ -126,3 +126,9 @@ alias mac="sh ~/codex/mac.sh"
 alias kdrive="sudo mount -t drvfs K: /mnt/kdrive"
 #メモ作成
 alias memo="cd ~/memox && vim"
+#ranger用
+alias sep="ranger && gn && ~"
+
+#ログイン時tmux起動
+[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+
