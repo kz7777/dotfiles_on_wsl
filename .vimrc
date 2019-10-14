@@ -91,9 +91,9 @@ if has('vim_starting')
 
                               " plugin
                               call plug#begin(expand('~/.vim/plugged'))
-                              """ space + ne -> sidebar
-                              "Plug 'scrooloose/nerdtree'
-                              "Plug 'jistr/vim-nerdtree-tabs'
+                              "" space + ne -> sidebar
+                              Plug 'scrooloose/nerdtree'
+                              Plug 'jistr/vim-nerdtree-tabs'
                               """ ga -> align
                               "Plug 'junegunn/vim-easy-align'
                               """ space + go -> exec script
