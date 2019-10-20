@@ -106,10 +106,10 @@ function open {
 
 
 
-# 初回シェル時のみ tmux実行 --> 動かない
-if [ $SHLVL = 1 ]; then
-    tmux a
-fi
+## 初回シェル時のみ tmux実行 --> 動かない
+#if [ $SHLVL = 1 ]; then
+#    tmux a
+#fi
 
 
 # trash-putコマンド関連 ゴミ箱 rangerでは動かない??
@@ -122,6 +122,8 @@ fi
 #mac ssh
 #シェルファイルを読み込み
 alias mac="sh ~/codex/mac.sh"
+#自宅macシェルファイルを読み込み
+alias mac_home="sh ~/codex/mac_home.sh"
 #Kドライブマウント
 alias kdrive="sudo mount -t drvfs K: /mnt/kdrive"
 #メモ作成
@@ -136,4 +138,17 @@ alias sep="ranger && gn && ~"
 cd
 
 #ログイン時tmux attached
-tmux attach
+#tmux attach
+
+#jjでesc
+#https://codeday.me/jp/qa/20190810/1424130.html
+bindkey -s jj '\e'
+bindkey jj vi-cmd-mode
+# vim日本語ヘルプhttps://qiita.com/KeitaNakamura/items/b87322d38fef4da3bac5
+export LC_ALL=ja_JP.UTF-8
+
+#condaで仮想環境
+conda activate vscode
+
+#ロケール変更
+export LANG=ja_JP.UTF8

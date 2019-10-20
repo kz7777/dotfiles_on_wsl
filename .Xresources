@@ -59,7 +59,7 @@ URxvt.font:                 xft:Dejavu Sans Mono-9,\
 !--------------------------------
 !20181001added dpi
 !----------------------
-Xft.dpi:			240
+Xft.dpi:			180
 !
 !
 !
@@ -75,7 +75,7 @@ Xft.dpi:			240
 !URxvt.fading:               40
 !
 !!! Font list and Spacing
-!URxvt.font:                 xft:Dejavu Sans Mono-10,\
+URxvt.font:                 xft:Dejavu Sans Mono-10,\
 !				xft:IPAGothic
 !URxvt.letterSpace:          -1
 !!URxvt.lineSpace:            0
